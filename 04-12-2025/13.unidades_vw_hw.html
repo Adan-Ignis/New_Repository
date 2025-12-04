@@ -24,13 +24,24 @@
                 text-align: center;
             }
 
-            .hero p {}
+            .hero p {
+                font-size: 2.5vw;
+                text-align: center;
+            }
+
+            .rojo {
+                color: rgb(231, 178, 178);
+            }
+
+            .caja {
+                border: 12px solid bisque;
+            }
         </style>
     </head>
     <body>
-        <div class="hero">
+        <div class="hero rojo caja"> <!-- Se puede aplicar varias clases separandolas con un espacio-->
             <h1>Bienvenido</h1>
-            <p>Esta seccion usa vh y vw para escalar la ventana</p>
+            <p class="caja rojo">Esta seccion usa vh y vw para escalar la ventana</p>
         </div>
     </body>
 </html>
