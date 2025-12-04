@@ -45,6 +45,7 @@ rem
 porcentajes
 
 vw y hw
+    Es proporcional al tamaño de la ventana del navegador
 
 <!-- asdf -->
 Para comentar algo ya escrito se selecciona y se pulsa "control+ç"
