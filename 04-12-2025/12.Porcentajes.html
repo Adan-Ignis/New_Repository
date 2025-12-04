@@ -1,0 +1,49 @@
+<!-- Ignacio Gómez Vázquez -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            .resp {
+                width: 80%;
+                height: 200px;
+                background-color: aquamarine;
+                margin: 0 auto;
+            }
+
+            .hijo {
+                width: 50%;
+                height: 100px;
+                background-color: blue;
+            }
+
+            .altura-padre {
+                height: 500px;
+                width: 100px;
+                background-color: aqua;
+            }
+
+            .altura-hijo {
+                height: 50%;
+                width: 50%;
+                /* padding-top y margin-top con porcentajes utilizan las medidas del contenedor del padre */
+                /* Los margenes verticales tienen relacion con el contenedor horizontal */
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="resp">
+            <div class="hijo"></div>
+        </div>
+        <div class="hijo"></div>
+
+        <div class="altura-padre">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, id expedita assumenda animi doloribus sapiente placeat ad at repellendus, fugiat architecto libero! Perspiciatis dolorem suscipit quis nisi excepturi tempore distinctio.
+            <div class="altura-hijo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, beatae ut dolorum, velit nam, laborum saepe quia molestiae totam quidem omnis ea ad eligendi nihil debitis neque soluta similique in.</div>
+        </div>
+    </body>
+</html>
