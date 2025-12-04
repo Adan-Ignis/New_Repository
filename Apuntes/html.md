@@ -31,3 +31,20 @@ Si pones un enlace con una ruta a un enlace que no existe, te lo crea (si quiere
 
 <!-- https://getnikola.com/ -->
     Sirve para crear paginas web estaticas
+
+<!-- Unidades relativas -->
+Em
+    Em: Font-size
+    Es proporcional al elemento padre
+
+rem
+    Es proporcional al elemento raiz
+
+    La raiz hace referencia al "html" o al "root"
+
+porcentajes
+
+vw y hw
+
+<!-- asdf -->
+Para comentar algo ya escrito se selecciona y se pulsa "control+ç"
