@@ -28,3 +28,6 @@ Para separar el archivo css del html se pone lo siguiente
 <!-- https://validator.w3.org -->
 
 Si pones un enlace con una ruta a un enlace que no existe, te lo crea (si quieres)
+
+<!-- https://getnikola.com/ -->
+    Sirve para crear paginas web estaticas
