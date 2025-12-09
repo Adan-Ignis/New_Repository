@@ -24,3 +24,7 @@ body{
 img{
     border-radius: 50%;
 }
+
+.texto-blanco {
+    color: rgb(214, 241, 253);
+}
