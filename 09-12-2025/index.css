@@ -1,0 +1,31 @@
+.blanco{
+    background-color: rgb(255, 255, 255);
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.azul{
+    background-color: rgb(129, 212, 250);
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.contenedor{
+    box-shadow: 5px rgb(238, 238, 238);
+    margin: auto;
+    height: auto;
+    width: 50%;
+    display: flex;
+}
+
+.flotar{
+    margin: 5px;
+}
+
+img{
+    border-radius: 50%;
+}
