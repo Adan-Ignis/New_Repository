@@ -16,14 +16,9 @@ body{
 
 .contenedor{
     box-shadow: 5px rgb(238, 238, 238);
-    margin: auto;
-    height: auto;
+    margin: 5px auto;
     width: 50%;
     display: flex;
-}
-
-.flotar{
-    margin: 5px;
 }
 
 img{
