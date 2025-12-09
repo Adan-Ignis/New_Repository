@@ -19,7 +19,7 @@ body{
 }
 
 .contenedor{
-    box-shadow: 5px rgb(238, 238, 238);
+    /* box-shadow: 5px rgb(238, 238, 238); */
     margin: 5px auto;
     width: 50%;
     display: flex;
