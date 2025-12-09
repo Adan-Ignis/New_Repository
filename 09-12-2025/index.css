@@ -10,6 +10,10 @@ body{
     background-color: rgb(129, 212, 250);
 }
 
+.foto{
+    padding: 1rem;
+}
+
 .centrar-texto{
     text-align: center;
 }
@@ -19,6 +23,13 @@ body{
     margin: 5px auto;
     width: 50%;
     display: flex;
+}
+
+.icono{
+    background-color: rgb(97, 159, 187);
+    border-radius: 50%;
+    width: auto;
+    /* margin: 5px; */
 }
 
 img{
