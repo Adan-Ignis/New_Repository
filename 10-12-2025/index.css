@@ -1,0 +1,9 @@
+.contenedor{
+    display: flex;
+}
+
+.item{
+    padding: 10px;
+    background-color: aqua;
+    margin: 5px;
+}
