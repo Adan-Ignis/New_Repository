@@ -1,8 +1,15 @@
 .contenedor{
+    height: 100vh;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .item{
+    flex-grow: 0;
+    flex-shrink: 0;
+
     padding: 10px;
     background-color: aqua;
     margin: 5px;
