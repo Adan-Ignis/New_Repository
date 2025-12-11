@@ -6,3 +6,16 @@ diferencia entre DIV y SPAN
 
 Class
     Se pone ".", luego sin espacios se pone el nombre de la clase y al final se pone "{}"
+
+<!-- 11/12/2025 -->
+display: flex
+flex-wrap: wrap
+flex-direction: column
+justify-content: center
+aling-items: center
+gap: 30px
+padding: 10px
+background-color: aquamarine
+border: 2px solid blue
+
+<!-- Pagina web: https://internetingishard.netlify.app/html-and-css/flexbox/ -->
