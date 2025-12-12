@@ -7,6 +7,10 @@ html{
     background-color: #D6D6CD;
 }
 
+nav{
+    text-align: center;
+}
+
 .contenedor{
     display: flex;
     justify-content: space-evenly;
