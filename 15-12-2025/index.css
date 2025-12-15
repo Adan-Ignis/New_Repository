@@ -21,7 +21,15 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style-type: none;
+}
+
 /* clases */
+.contenedor{
+    /* background-color: #FBDA5F; */
+}
+
 .tarjeta{
     /* En la parte de arriba es del color #EEEEEE */
     background-color: #FFFFFF;
