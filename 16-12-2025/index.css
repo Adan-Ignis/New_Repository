@@ -1,0 +1,29 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: 100px 20% 30% auto; /* fr: fracciones */
+    grid-template-rows: 200px 300px;
+    /* Si hay más de 6 elementos, se seguira el patrón que se ha definidio en "grid-template-columns" y "grid-template-rows" */
+    /* grid-auto-rows: 100px; A partir del 7 elemento (inclusive) tiene una altura de 100px */
+    gap: 5px;
+
+    /* grid-template-columns: 100px repeat(3, 1fr) 100px; Se repite el "fr" tres veces, en el total hay 5 columnas */
+}
+
+.grid-item{
+    background-color: rgb(186, 186, 229);
+    border: 1px solid red;
+}
+
+.cabecera{
+    background-color: rgb(88, 88, 238);
+    /* grid-column-start: 1;
+    grid-row-end: 8; */
+    /* grid-row: 2 / 2; El primero es el numero de la fila y el segúndo cuantas filas ocupara | en realidad no funciona asi y sigod sin entenderlo */
+}
+
+.segunda{
+    background-color: rgb(242, 117, 117);
+    /* grid-row-start: 2;
+    grid-row-end: 8; */
+    grid-row: 2 / 4;
+}
