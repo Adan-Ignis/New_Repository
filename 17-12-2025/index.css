@@ -23,3 +23,15 @@ h2{}
 /* clases */
 
 .tarjeta{}
+
+.tarjeta12{
+    grid-column: span 12;
+}
+
+.tarjeta6{
+    grid-column: span 6;
+}
+
+.tarjeta4{
+    grid-column: span 4;
+}
