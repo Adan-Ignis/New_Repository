@@ -17,48 +17,50 @@
 
 .rojo{
     background-color: red;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     top: 0;
     left: 0;
-    position: relative;
+    position: absolute;
     z-index: 1;
 }
 
 .naranja{
     background-color: orange;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     top: 0;
     right: 0;
-    position: relative;
+    position: absolute;
     z-index: 1;
 }
 
 .amarillo{
     background-color: yellow;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     bottom: 0;
     left: 0;
-    position: relative;
+    position: absolute;
     z-index: 1;
 }
 
 .verde{
     background-color: green;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     bottom: 0;
     right: 0;
-    position: relative;
+    position: absolute;
     z-index: 1;
 }
 
 .azul{
     background-color: blue;
-    width: 25px;
-    height: 25px;
-    position: relative;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     z-index: 1;
 }
