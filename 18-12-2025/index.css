@@ -9,8 +9,7 @@ body{
 
 /* Clases */
 .contenedor{
-    display: flex;
-    width: 50%;
+    display: grid;
 }
 
 .tarjeta{
