@@ -1,4 +1,4 @@
-#{
+*{
     margin: 0;
     padding: 0;
 }
@@ -9,23 +9,29 @@
 
 /* Clase */
 .blanco{
-    background-color: blanco;
+    background-color: white;
     border: 1px solid red;
-    position: absolute;
+    position: relative;
     width: 200px;
     height: 200px;
+    top: 5px;
+    left: 5px;
 }
 
-.grisclaro{
+.gris{
     background-color: gray;
-    position: relative;
+    position: absolute;
     width: 50%;
     height: 50%;
+    bottom: 5px;
+    right: 5px;
 }
 
-.grisoscuro{
+.oscuro{
     background-color: black;
-    position: relative;
+    position: absolute;
     width: 50%;
     height: 50%;
+    bottom: 5px;
+    right: 5px;
 }
