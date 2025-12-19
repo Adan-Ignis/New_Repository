@@ -1,0 +1,31 @@
+#{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estructura */
+
+/* Etiqueta */
+
+/* Clase */
+.blanco{
+    background-color: blanco;
+    border: 1px solid red;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.grisclaro{
+    background-color: gray;
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+.grisoscuro{
+    background-color: black;
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
