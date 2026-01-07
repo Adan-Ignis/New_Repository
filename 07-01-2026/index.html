@@ -1,0 +1,42 @@
+<!-- Ignacio Gómez Vázquez -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hola(){
+            alert("Hola desde el head");
+        }
+        function adios(){
+            alert("adios Douglas");
+        }
+        function total() {
+            hola();
+            adios();
+        }
+
+        //Javascript es sensible a mayusuculas y minusculas
+
+        //variable
+        //Tipado dinámico
+        //Débilmente tipado
+        var nombre = "Mario";
+        nombre = 12;
+
+        //constante
+        const carpeta = 'c:\\uno\\dos';
+
+        //Solamente puede usarse en el area en donde se encuentra
+        let numero = 12;
+        console.log(numero);
+    </script>
+</head>
+<body>
+    <button onclick='console.log("Hola Mundo");'>Haz click</button>
+    <button onclick="total();">Haz click</button>
+
+    <button onclick="alert('2' * 3);">Haz click</button>
+</body>
+</html>
