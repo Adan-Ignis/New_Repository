@@ -30,3 +30,53 @@ Variable
 Constante
 
     const nombreConstante1 = "Mario";
+
+Let
+
+    (Algo abstracto que no he visto anteriormente ni por cuenta propia ni en el grado superior DAM, revisar más tranquilamente)
+
+Operadores Logicos
+
+    ==
+
+    ===
+
+    !=
+
+    !==
+
+    <, <=, >, >=
+
+    &&
+
+    ||
+
+    !
+
+Operadores Aritmeticos-Logicos
+
+    ()
+
+    ^
+
+    *, /
+
+    +, -
+
+    Mod, \(DIV)
+
+    !
+
+    &&
+
+    ||
+
+    ==
+
+    ===
+
+    !=
+
+    !==
+
+    <, <=, >, >=
