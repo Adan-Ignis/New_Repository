@@ -97,6 +97,8 @@ Revisar por cuenta propia
     Codewars
         Sirve para aprender y mejorar las habilidades de programación
 
+    linters
+
 ---
 
 Examen
