@@ -31,6 +31,8 @@ Constante
 
     const nombreConstante1 = "Mario";
 
+    Se escribe entera en mayuscula
+
 Let
 
     (Algo abstracto que no he visto anteriormente ni por cuenta propia ni en el grado superior DAM, revisar más tranquilamente)
@@ -63,6 +65,8 @@ Operadores Aritmeticos-Logicos
 
     +, -
 
+    ** (Equivalente a "^")
+
     Mod, \(DIV)
 
     !
@@ -80,3 +84,25 @@ Operadores Aritmeticos-Logicos
     !==
 
     <, <=, >, >=
+
+---
+
+Revisar por cuenta propia
+
+    Mapa de karnaugh
+    Reducir por karnaugh
+
+        Karnaugh tiene relacion con las puertas logicas
+
+    Codewars
+        Sirve para aprender y mejorar las habilidades de programación
+
+---
+
+Examen
+
+sobresaliente 9-10
+notable 7-8
+bien 6
+suficiente 5
+suspenso 0-4
