@@ -14,5 +14,28 @@
                 contador--;
             }
         </script>
+
+        <script>
+            function mayor(a, b) {
+                if (a > b) {
+                    console.log(a + " es mayor que " + b);
+                } else if (a < b) {
+                    console.log(a + " es menor que " + b);
+                } else {
+                    console.log("Son el mismo numero");
+                }
+            }
+
+            console.log(mayor(2, 3));
+        </script>
+
+        <script>
+            function menor(a, b) {
+                mayor = a > b ? a : b;
+                menor = a > b ? b : a;
+                console.log(mayor + " es mayor que " + menor);
+            }
+            console.log(menor(2, 3));
+        </script>
     </body>
 </html>
