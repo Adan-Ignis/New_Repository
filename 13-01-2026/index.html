@@ -16,6 +16,39 @@
         //Escribir una función que cuente las vocales de una cadena que recibe como parámetro
 
         //Escribir una función que reciba como parámetro un array de números y devuelva otro array que contenga solo los positivos
+
+        function areaRectangulo(a, b) {
+            return a*b
+        }
+
+        function tablaMultiplicar(a) {
+            for (let b = 1; b <= 10; b++) {
+                console.log(a + " * " + b + ": " + a*b )
+            }
+        }
+
+        function numeroVocales(a) {
+            let c = 0
+            for (let b = 0; b < a.length; b++) {
+                if (a[b] == "a" || a[b] == "e" || a[b] == "i" || a[b] == "o" || a[b] == "u" ||
+                    a[b] == "A" || a[b] == "E" || a[b] == "I" || a[b] == "O" || a[b] == "U"
+                ) {
+                    c++;
+                }
+            }
+            return c
+        }
+
+        function arrayPositivo(a) {
+            let b = []
+            for (let c = 0; c < a.length; c++) {
+                if (a[c] > 0) {
+                    b.push(a[c])
+                }
+            }
+            console.log(b.length);
+            return b
+        }
     </script>
 </body>
 </html>
