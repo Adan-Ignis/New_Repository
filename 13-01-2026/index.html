@@ -8,20 +8,20 @@
 </head>
 <body>
     <script>
-        //Escribe una función que calcule el área de un rectangulo
+        //1. Escribe una función que calcule el área de un rectangulo
         //Recibe como parámetros el largo y el ancho
         function areaRectangulo(a, b) {
             return a*b
         }
 
-        //Hacer una función que calcule la tabla de multiplicar de un número que recibe como parámetro
+        //2. Hacer una función que calcule la tabla de multiplicar de un número que recibe como parámetro
         function tablaMultiplicar(a) {
             for (let b = 1; b <= 10; b++) {
                 console.log(a + " * " + b + ": " + a*b )
             }
         }
 
-        //Escribir una función que cuente las vocales de una cadena que recibe como parámetro
+        //3. Escribir una función que cuente las vocales de una cadena que recibe como parámetro
         function numeroVocales(a) {
             let c = 0
             for (let b = 0; b < a.length; b++) {
@@ -34,7 +34,7 @@
             return c
         }
 
-        //Escribir una función que reciba como parámetro un array de números y devuelva otro array que contenga solo los positivos
+        //4. Escribir una función que reciba como parámetro un array de números y devuelva otro array que contenga solo los positivos
         function arrayPositivo(a) {
             let b = []
             for (let c = 0; c < a.length; c++) {
@@ -72,6 +72,46 @@
                     b[3]++;
                 } else if (a[index] == "u") {
                     b[4]++;
+                }
+            }
+            return b;
+        }
+
+        //5. Hacer una función que suma todos los numeros impares menores a uno dado como parámetro
+        function sumaNumeroImpar(a) {
+            let b = 0;
+            for(let c = 1; c <= a; c++) {
+                if(c % 2 == 1) {
+                    b += c;
+                }
+            }
+            return b;
+        }
+
+        //6. Hacer una funcion que encuentre los números comunes a dos listas pasadas como parámetros y los devuelva en otra lista
+        function numeroComunes(lista1, lista2) {
+            let salida = [];
+            for(let num of lista1) {
+                if(lista2.includes(num) && !salida.include(num)) {
+                    salida.push(num);
+                }
+            }
+            return salida;
+        }
+
+        //7. Hacer una funcion que cuente los digitos de un numero
+        function numeroDigitos(a) {
+            let b = 0;
+        }
+
+        //8. Hacer una función que devuelva la cadena más larga de las contenidas en un array de cadenas que se pasa como parámetro.
+        function cadenaLarga(a) {
+            let b = "";
+            let c = 0;
+            for (let index = 0; index < a.length; index++) {
+                if(c > a[index].length) {
+                    b = a[index];
+                    c = a[index].length;
                 }
             }
             return b;
