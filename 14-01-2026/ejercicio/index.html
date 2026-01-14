@@ -5,9 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function cambiaColor() {
+            let elem = document.getElementById("p_hola");
+            elem.stye.color="green";
+            document.getElementById("p_hola").style.color="red";
+        }
+    </script>
 </head>
 <body>
-    <p>Hola Mundo</p>
-    <button>Haz clic</button>
+    <p id="p_hola">Hola Mundo</p>
+    <button id="boton" onclick="cambiaColor()">Haz clic</button>
+    <ul>
+        <li><a href="">Elemento 01</a></li>
+        <li><a href="">Elemento 02</a></li>
+        <li><a href="">Elemento 03</a></li>
+        <li><a href="">Elemento 04</a></li>
+        <li><a href="">Elemento 05</a></li>
+        <li><a href="">Elemento 06</a></li>
+        <li><a href="">Elemento 07</a></li>
+        <li><a href="">Elemento 08</a></li>
+        <li><a href="">Elemento 09</a></li>
+        <li><a href="">Elemento 10</a></li>
+    </ul>
 </body>
 </html>
