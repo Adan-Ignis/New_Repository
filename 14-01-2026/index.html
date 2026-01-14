@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        alert("Desde HEAD: " + document.body)
+        alert("Desde HEAD: " + document.body);
     </script>
 </head>
 <body>
-    <h1></h1>
     <script>
-        alert("Desde BODY: " + document.body)
+        alert("Desde BODY: " + document.body);
     </script>
 </body>
 </html>
+
+// La documentación solamente se creara una vez leido el html entero, pero si los script del head se procesa antes da un fallo, debe evitarse que se ejecute el script del head antes de la creación del documento.
+// Revisar que es el DOM en javascript
