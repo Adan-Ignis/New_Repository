@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function agregar() {
+            let padre = document.getElementById("lista");
+            //let padre = document.querySelector("#lista"); | Es una forma alternativa a la linea de arriba
+            let li = document.createElementA("li");
+            li.textContent = "Elemento nuevo";
+            padre.appendChild(li);
+        }
+    </script>
 </head>
 <body>
     <h1>Create element y Appened child</h1>
-    <button>Agregar</button>
+    <button onclick="agregar()">Agregar</button>
     <ul id="lista"></ul>
-    
-    <script></script>
 </body>
 </html>
