@@ -5,19 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
+    <script src = "Elements.js">
         function agregar() {
             let padre = document.getElementById("lista");
             //let padre = document.querySelector("#lista"); | Es una forma alternativa a la linea de arriba
-            let li = document.createElementA("li");
+            let li = document.createElement("li");
             li.textContent = "Elemento nuevo";
             padre.appendChild(li);
+        }
+
+        function eliminar() {
+            let padre = document.getElementById("lista");
+            let li = padre.lastChild;
+            console.log(li)
+            if (li) {padre.removeChild(li);}
         }
     </script>
 </head>
 <body>
     <h1>Create element y Appened child</h1>
     <button onclick="agregar()">Agregar</button>
+    <button onclick="eliminar()">Eliminar</button>
     <ul id="lista"></ul>
 </body>
 </html>
