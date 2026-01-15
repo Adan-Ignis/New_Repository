@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    
+</head>
+<body>
+    <button id="verde">verde</button>
+    <button id="azul">azul</button>
+
     <script>
         let verde = document.getElementById("verde");
         let azul = document.getElementById("azul");
 
-        verde.addEventListener("click",ponerVerde);
-        azul.addEventListener("click",ponerAzul);
+        verde.addEventListener("click", ponerVerde);
+        azul.addEventListener("click", ponerAzul);
 
         function ponerVerde() {
-            document.body.style.backgroundColor="verde";
+            document.body.style.backgroundColor="green";
         }
 
         function ponerAzul() {
             document.body.style.backgroundColor="blue";
         }
+
+        function chorra() {
+            console.log("Nada de nada");
+        }
     </script>
-</head>
-<body>
-    <button id="verde">verde</button>
-    <button id="azul">azul</button>
 </body>
 </html>
