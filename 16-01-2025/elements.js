@@ -1,21 +1,90 @@
-function ej1 () {}
+// Ejercicio 1
+function ej1 () {
+    let btn = document.getElementById("ej1");
+    let colorActual = btn.style.backgroundColor;
+    //console.log(colorActual);
+    if (colorActual == color1) {
+        btn.style.backgroundColor = color2;
+    } else {
+        btn.style.backgroundColor = color1;
+    }
+}
 
-function ej2 () {}
+// function ej2 () {
+//     let a = document.getElementById("ej2");
+//     parrafo.style.backgroundColor="yellow";
 
-function ej3 () {}
+//     //console.log("Pisando el p");
+// }
 
-function ej4 () {}
+// Ejercicio 2
+function mostrarMensaje () {
+    let parrafo = document.getElementById("ej2");
+    if (parrafo.style.backgroundColor == "yellow") {
+        parrafo.style.backgroundColor = "";
+    } else {
+        parrafo.style.backgroundColor = "yellow";
+    }
+}
 
-function ej5 () {}
+// Ejercicio 3
+function ej3 () {
+    let a = document.getElementById("ej3");
 
-function ej6 () {}
+    a.addEventListener("mouseover",ponerAmarillo);
+    a.addEventListener("mouseleave", quitarAmarillo);
+}
 
-function ej7_1 () {}
+function ponerAmarillo () {
+    a.style.backgroundColor = "yellow";
+}
 
-function ej7_2 () {}
+function quitarAmarillo () {
+    a.style.backgroundColor = "";
+}
 
-function ej7_3 () {}
+// Ejercicio 4 | En realidad es el 3
+let contador = 0;
+let texto = document.getElementById("ej3");
+let total = document.getElementById("total");
 
-function ej8 () {}
+total.addEventListener("keyup", cuentaTeclas);
 
-function ej9 () {}
+function ej4 () {
+    let a = 0;
+
+    let b = document.getElementById("ej4");
+}
+
+// Ejercicio 5
+function ej5 () {
+    let a = document.getElementById("ej5");
+}
+
+// Ejercicio 6
+function ej6 () {
+    let a = document.getElementById("ej6");
+}
+
+// Ejercicio 7
+function ej7_1 () {
+    let a = document.getElementById("ej7.1");
+}
+
+function ej7_2 () {
+    let a = document.getElementById("ej7.2");
+}
+
+function ej7_3 () {
+    let a = document.getElementById("ej7.3");
+}
+
+// Ejercicio 8
+function ej8 () {
+    let a = document.getElementById("ej8");
+}
+
+// Ejercicio 9
+function ej9 () {
+    let a = document.getElementById("ej9");
+}
