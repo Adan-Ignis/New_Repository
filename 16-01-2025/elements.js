@@ -69,14 +69,39 @@ function ej6 () {
 // Ejercicio 7
 function ej7_1 () {
     let a = document.getElementById("ej7.1");
+
+    a.addEventListener("mouseover",);
+    a.addEventListener("mouseleave",);
 }
 
 function ej7_2 () {
     let a = document.getElementById("ej7.2");
+
+    a.addEventListener("mouseover",);
+    a.addEventListener("mouseleave",);
 }
 
 function ej7_3 () {
     let a = document.getElementById("ej7.3");
+
+    a.addEventListener("mouseover",);
+    a.addEventListener("mouseleave",);
+}
+
+
+function ej3 () {
+    let a = document.getElementById("ej3");
+
+    a.addEventListener("mouseover",ponerAmarillo);
+    a.addEventListener("mouseleave", quitarAmarillo);
+}
+
+function ponerAmarillo () {
+    a.style.backgroundColor = "yellow";
+}
+
+function quitarAmarillo () {
+    a.style.backgroundColor = "";
 }
 
 // Ejercicio 8
@@ -87,4 +112,12 @@ function ej8 () {
 // Ejercicio 9
 function ej9 () {
     let a = document.getElementById("ej9");
+}
+
+function ponerBorder () {
+    texto.style.border = "2px solid red";
+}
+
+function quitarBorder () {
+    texto.style.border = "";
 }
