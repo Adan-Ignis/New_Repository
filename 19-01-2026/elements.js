@@ -9,17 +9,25 @@
 // }
 
 // Repuesta del profesor
-function mostrarFecha () {
+let manejador;
+
+function mostrarFecha() {
     let fecha = new Date(); //Para obtener la fecha
     let hora = fecha.getHours();
     let minuto = fecha.getMinutes();
     let segundo = fecha.getSeconds();
 
-    let spanHora = document.getElementById("Horas");
-    let spanMinuto = document.getElementById("Minutos");
-    let spanSegundo = document.getElementById("Segundos");
+    let spanHora = document.getElementById("horas");
+    let spanMinuto = document.getElementById("minutos");
+    let spanSegundo = document.getElementById("segundos");
 
-    spanHora.innerHtml = hora;
-    spanMinuto.innerHtml = minuto;
-    spanSegundo.innerHTML = segundo;
+    spanHora.innerHtml = hora.toString().padStart(2, "0");
+    spanMinuto.innerHtml = minuto.toString().padStart(2, "0");
+    spanSegundo.innerHTML = segundo.toString().padStart(2, "0");
+    //Tambien puede utilizarse: String(segundo).padStart(2, "0");
+}
+
+function iniciar() {
+    mostrarFecha();
+    manejador = setInterval(mostrarFecha, 1000);
 }
