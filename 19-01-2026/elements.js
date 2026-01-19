@@ -24,7 +24,7 @@ function mostrarFecha() {
     let diaSemana = fecha.getDay();
 
     //Día de la semana
-    //let spanDiaSemana = document.getElementById("diaSemana");
+    let spanDiaSemana = document.getElementById("diaSemana");
     //Fecha
     let spanMes = document.getElementById("mes");
     let spanDia = document.getElementById("dia");
