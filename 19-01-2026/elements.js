@@ -15,9 +15,9 @@ function mostrarFecha () {
     let minuto = fecha.getMinutes();
     let segundo = fecha.getSeconds();
 
-    let spanHora = document.getElementById("horas");
-    let spanMinuto = document.getElementById("minutos");
-    let spanSegundo = document.getElementById("segundos");
+    let spanHora = document.getElementById("Horas");
+    let spanMinuto = document.getElementById("Minutos");
+    let spanSegundo = document.getElementById("Segundos");
 
     spanHora.innerHtml = hora;
     spanMinuto.innerHtml = minuto;
