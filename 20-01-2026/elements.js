@@ -1,16 +1,3 @@
-let numero = Math.floor(Math.random() * 11);
-let nPropuesto
-let intento = 10;
-
-do {
-    if (numero == nPropuesto) {
-        window.print("Lo has adivinado");
-    } else {
-        intento--;
-        windows.print("te quedan " + intento + "intentos");
-    }
-} while (numero != a || intento >= 0);
-
 // Solucion del profesor
 function adivinar(e) {
     e.preventDefaul();
@@ -21,6 +8,8 @@ function adivinar(e) {
 
     NUM = parseInt(numero.value);
     console.log(num);
+    quedan.innerHTML = max_intentos - intentos;
+    intentos--
 
     if(intentos < max_intentos) {
         if(num == objetivo) {
@@ -31,7 +20,16 @@ function adivinar(e) {
             resultado.innerHTML = "El numero es mayor que el objetivo";
             // Tambien se puede poner "El numero ${numero} es mayor que el objetivo" para poner valores de una variable sin tener que usar "+". Se conoce como interpolación.
         }
+    } else {
+        resultado.innerHTML = "TERMINADO. el numero era $(objetivo)";
+        btn_enviar.disable = true;
+        numero.disabled = true;
     }
+
+    numero.innerHTML = "";
+    numero.focus();
 }
 
-function reiniciar() {}
+function reiniciar() {
+    window.location.reload();
+}
