@@ -9,11 +9,12 @@
 <body>
     <h1>Adivina el número entre 1 y 100</h1>
     <h2>Te quedan <span>XX</span> intentos</h2>
-    <form action="" onsubmit="event.preventDefault()">
+    <form action="" onsubmit="event.preventDefault(event)">
         <label for="numero">Número: </label>
         <input type="text" name="" id="numero">
-        <button id="enviar" onclick="">Adivinar</button>
+        <button id="enviar" onclick="adivinar()">Adivinar</button>
     </form>
+    <button onclick="reiniciar()">Reiniciar</button>
 
     <script src="elements.js"></script>
 </body>

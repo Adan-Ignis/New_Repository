@@ -10,3 +10,8 @@ do {
         windows.print("te quedan " + intento + "intentos");
     }
 } while (numero != a || intento >= 0);
+
+// Solucion del profesor
+function adivinar() {}
+
+function reiniciar() {}
