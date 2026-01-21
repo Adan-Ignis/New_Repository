@@ -23,8 +23,34 @@
             let altura = document.body.scrollHeight - window.innerHeight;
             document.getElementById("scrollbar").style.width = (scrolled/altura) * 100 + "%";
             document.getElementById("gris").style.width = scrolled? "100%" : "0"; // "scrolled?" cuando tiene de valor 0 se considera "false"
+
+            //Mostrar flecha
+            let flecha = document.querySelector(".oculto");
+            if (porcentaje > 0) {
+                flecha.classList.toggle("flecha");
+            } else {
+                flecha.classList.toggle("oculto");
+            }
         });
     </script>
+
+    <!-- ************************** -->
+    <button id="btn_tema">Alterar Tema</button>
+    <div class="flecha" onclick="window.scrollTo(0,0)">^</div>
+    <div class="flecha">^</div>
+
+    <script>
+        const boton = document.getElementById("btn_tema");
+        boton.addEventListener("click", function() {
+            document.body.classList.toggle("oscuro");
+            boton.textContent = document.body.classList.contains("oscuro") ? "Tema Claro" : "Tema Oscuro"
+        })
+    </script>
+
+    <!-- ************************** -->
+    <script></script>
+
+    
     <script src="elements.js"></script>
 </body>
 </html>
