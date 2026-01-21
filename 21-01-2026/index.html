@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="gris"></div>
+    <div id="scrollbar"></div>
+
     <h2>Barra de progreso con scroll</h2>
-    <div style="height: 800px;"></div>
+    <!-- <div style="height: 800px;"></div> -->
+    <div style="height: 1200px;"></div>
 
     <script>
-        window.addEventListener("scroll",function) {
+        window.addEventListener("scroll",function() {
             let scrolled = window.scrollY;
+            console.log(scrolled);
             let altura = document.body.scrollHeight - window.innerHeight;
-        }
+            document.getElementById("scrollbar").style.width = (scrolled/altura) * 100 + "%";
+            document.getElementById("gris").style.width = scrolled? "100%" : "0"; // "scrolled?" cuando tiene de valor 0 se considera "false"
+        });
     </script>
     <script src="elements.js"></script>
 </body>

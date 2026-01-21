@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#scrollbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10px;
+    background-color: aqua;
+    width: 0;
+}
+
+#gris {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10px;
+    background-color: rgb(175, 179, 179);
+    width: 100%;
+}
