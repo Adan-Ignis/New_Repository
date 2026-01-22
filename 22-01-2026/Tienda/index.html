@@ -51,7 +51,15 @@
                 lista_carrito.appendChild(li);
                 total += parseFloat(total.textContent);
             })
-        }
+        };
+
+        let pagar = document.getElementById("pagar");
+        pagar.addEventListener("click", function() {
+            for(let fila of lista_carrito.children) {
+                fila.remove();
+            };
+            total.innerHTML = 0;
+        })
     </script>
 </body>
 </html>
