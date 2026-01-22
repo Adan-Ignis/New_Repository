@@ -11,11 +11,19 @@
 <body>
     <h1>Almacén Don Manolo</h1>
     <div class="estantes">
-        <div class="producto">
+        <div class="producto" id="prod1" data-precio="12.89">
             <h3 class="nombre"></h3>
-            <img src="" alt="">
+            <img src="" alt="" class="foto">
             <p class="descripcion"></p>
-            <span class="precio"></span><button class="boton_comprar">Comprar</button>
+            <span class="precio">Precio: 12.89</span>
+            <button class="boton_comprar">Comprar</button>
+        </div>
+        <div class="producto" id="prod1" data-precio="12.89">
+            <h3 class="nombre"></h3>
+            <img src="" alt="" class="foto">
+            <p class="descripcion"></p>
+            <span class="precio">Precio: 12.89</span>
+            <button class="boton_comprar">Comprar</button>
         </div>
     </div>
 
@@ -24,8 +32,26 @@
             <li>Zapatillas 12.89</li>
             <li>Vasos 23.30</li>
         </ul>
-        <p>Total: 55.76€</p>
+        <p>Total: <span class="total">0</span>€</p>
         <button>pagar</button>
     </div>
+
+    <script>
+        let preducto = document.querySelector(".producto");
+        let total = document.getElementById("total");
+        let lista_carrito = document.getElementById("lista");
+
+        for (let i = 0; i < products.lent; i++) {
+            let boton = productos[i].length.querySelector(".boton_comprar");
+            let precio = productos[i].getAttribute("data-precio");
+            let nombre = productos[i].querySelector(".nombre");
+            boton.addEventListener("click", function() {
+                let li = document.createElement("li");
+                li.innerHTML = nombre.textContent +  " " + precio.textContent + "€";
+                lista_carrito.appendChild(li);
+                total += parseFloat(total.textContent);
+            })
+        }
+    </script>
 </body>
 </html>
