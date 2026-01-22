@@ -38,6 +38,9 @@
         let contenidos = document.querySelectorAll(".tab-content");
     </script>
 
+    <div class="flecha" onclick="window.scrollTo(0,0)">^</div>
+    <div style="height: 1100px;"></div>
+
     <script>
         window.addEventListener("scroll",function() {
             let scrolled = window.scrollY;
@@ -47,23 +50,16 @@
             document.getElementById("gris").style.width = scrolled? "100%" : "0"; // "scrolled?" cuando tiene de valor 0 se considera "false"
 
             //Mostrar flecha
-            let flecha = document.querySelector(".oculto");
-            if (porcentaje > 0) {
-                flecha.classList.toggle("flecha");
+            let flecha = document.querySelector(".flecha");
+            if (porcentaje > 0.2) {
+                flecha.style.display = "block";
             } else {
-                flecha.classList.toggle("oculto");
+                flecha.style.display = "none";
             }
         });
     </script>
 
     <!-- ************************** -->
-    <button id="btn_tema">Alterar Tema</button>
-    <div>
-        <textarea name="" id="cuadro" maxlength="10"></textarea>
-        <p>Utilizados 40 de 100 caracteres</p>
-    </div>
-    <div class="flecha" onclick="window.scrollTo(0,0)">^</div>
-    <div class="flecha">^</div>
 
     <script>
         const boton = document.getElementById("btn_tema");
@@ -72,9 +68,6 @@
             boton.textContent = document.body.classList.contains("oscuro") ? "Tema Claro" : "Tema Oscuro";
         });
     </script>
-
-    <!-- ************************** -->
-    <script></script>
     
     <!-- ************************** -->
     <script>
