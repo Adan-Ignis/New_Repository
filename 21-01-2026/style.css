@@ -6,6 +6,7 @@
 /* Estructura */
 html {
     font-size: 16px;
+    font-family: ;
 }
 
 /* clase */
@@ -30,6 +31,44 @@ html {
 
 .flecha:hover {
     cursor: pointer;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 600px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.884);
+}
+
+.tabs {
+    display: flex;
+    background-color: rgb(84, 129, 242);
+    border-radius: 8px 8px 0 0;
+}
+
+.tab {
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    background-color: rgb(72, 52, 200);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.tab-content {
+    padding: 20px;
+    display: none;
+    background-color: whitesmoke;
+    color: #333;
+}
+
+.tab.active {
+    background-color: rgb(red, green, blue);
+}
+
+.tab-content.active {
+    display: block;
 }
 
 .oculto {

@@ -13,8 +13,7 @@
     <div id="scrollbar"></div>
 
     <h2>Barra de progreso con scroll</h2>
-    <!-- <div style="height: 800px;"></div> -->
-    <div style="height: 1200px;"></div>
+    <button class="btn_tema">Tema Oscuro</button>
 
     <div>
         <textarea name="" id="cuadro" maxlength="100"></textarea>
@@ -33,6 +32,11 @@
         <div class="tab-content" id="tab2">Contenido de la pestaña 2</div>
         <div class="tab-content" id="tab3">Contenido de la pestaña 3</div>
     </div>
+
+    <script>
+        let tabs = document.querySelectorAll(".tab");
+        let contenidos = document.querySelectorAll(".tab-content");
+    </script>
 
     <script>
         window.addEventListener("scroll",function() {
