@@ -66,3 +66,7 @@ print(claves)
 print(sorted(meses.keys()))
 
 # c)
+días = int(input("Cuantos días: "))
+for m,d in meses.items():
+    if d == 31:
+        print(m)
