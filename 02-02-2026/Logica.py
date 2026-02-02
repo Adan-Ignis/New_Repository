@@ -58,3 +58,11 @@ if mes in meses:
     print(f"El mes de {mes} tiene {meses[mes]} días")
 else:
     print("Mes incorrecto")
+
+# b)
+claves = list(meses.keys())
+claves.sort()
+print(claves)
+print(sorted(meses.keys()))
+
+# c)
