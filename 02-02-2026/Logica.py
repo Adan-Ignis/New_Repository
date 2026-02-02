@@ -70,3 +70,8 @@ días = int(input("Cuantos días: "))
 for m,d in meses.items():
     if d == 31:
         print(m)
+
+# d)
+for k,v in sorted(meses.items(),key=lambda)
+
+# e)
