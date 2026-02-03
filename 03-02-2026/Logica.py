@@ -22,3 +22,37 @@ def saludar(nombre: str) -> str:
     return f"Hola {nombre}"
 
 saludar("Paco")
+
+
+def parametros(uno, dos, tres, opcional1):
+    return 0
+
+parametros(tres=3, unos=1, dos=2, opcional1="nada")
+
+
+print(1,2,3, sep="-----")
+
+
+def parametros(uno, dos, tres, opcional1=""):
+    print(uno, dos, tres)
+
+
+def param_variales(uno, dos, tres, *args, **kwargs):
+    print(uno, dos, tres)
+
+param_variales(1,2,22,3)
+
+
+def sumar(*args):
+    print(type(args))
+    return sum(args)
+
+total = sumar(1,2,4,3,4,5,6,7,8)
+print(total)
+
+
+def mostrar_config(**Kawargs):
+    for k,v in kwargs.items():
+        print(f"{k}: {v}")
+
+mostrar_config()
