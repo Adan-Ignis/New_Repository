@@ -59,3 +59,26 @@ def mostrar_config(**Kawargs):
     print(USUARIO, PUERTO, IP)
 
 mostrar_config(usr=teo,ip="1.2.3.4", altura=1.77)
+
+def log(mensaje, *args, **kwargs):
+    nivel = kwargs.get("nivel", "DEBUG")
+    prefijo = kwargs.get("prefijo")
+    msj_formato=f""
+
+
+def http_get(url, **kwargs):
+    timeout = kwargs.get("timeout", 5)
+    headers = kwargs.get("headers", {})
+    params = kwargs.get("params", {})
+
+    return {
+        "url": url,
+        "timeout": timeout,
+        "headers": headers,
+        "params": params
+    }
+
+http_get(
+    "http://google.com",
+    timeout = 10,
+    params = {"page": 2})
