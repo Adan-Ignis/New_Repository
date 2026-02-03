@@ -20,3 +20,5 @@ print(x1, x2, x3, x4)
 
 def saludar(nombre: str) -> str:
     return f"Hola {nombre}"
+
+saludar("Paco")
