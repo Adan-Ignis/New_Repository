@@ -72,6 +72,46 @@ for m,d in meses.items():
         print(m)
 
 # d)
-for k,v in sorted(meses.items(),key=lambda)
+from operator import itemgetter
+meses_ord = dict(sorted(meses.items(), key=itemgetter(1)))
+print(meses_ord)
+
+# d | Sergei)
 
 # e)
+meses_3 = {
+    "ene": "Enero",
+    "feb": "Febrero",
+    "mar": "Marzo",
+    "abr": "Abril",
+    "may": "Mayo",
+    "jun": "Junio",
+    "jul": "Julio",
+    "ago": "Agosto",
+}
+
+# 8. Construya un diccionario con las cartas de la baraja, cree un juego de cartas simple que reparta tres cartas a dos jugadores.
+# El jugador con la carta más alta gana.
+# En caso de empate, se compara la segunda carta más alta, y si es necesario, la tercera más alta.
+# Si las tres cartas tienen el mismo valor, el juego es un empate.
+import random
+
+baraja = []
+
+for palo in ["oros", "copas", "espadas", "bastos"]:
+    for i in range(1,13):
+        carta = {palo, i}
+        baraja.append(carta)
+
+random.shuffle(baraja)
+print(baraja)
+
+jugador1 = []
+jugador2 = []
+
+for i in range(3):
+    jugador1.append(baraja.pop())
+    jugador2.append(baraja.pop())
+
+pprint(jugador1)
+pprint(jugador2)
