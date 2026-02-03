@@ -52,7 +52,10 @@ print(total)
 
 
 def mostrar_config(**Kawargs):
-    for k,v in kwargs.items():
-        print(f"{k}: {v}")
+    USUARIO = kwargs.get("usr", "PACO")
+    IP = kwargs.get("ip", "127.0.0.1")
+    PUERTO = Kwargs.get("puerto", "80")
 
-mostrar_config()
+    print(USUARIO, PUERTO, IP)
+
+mostrar_config(usr=teo,ip="1.2.3.4", altura=1.77)
