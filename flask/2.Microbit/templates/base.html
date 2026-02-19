@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>{% block title %} Inicio {% endblock %}</title>
+</head>
+<body>
+    <header>
+        <div class="centrado">
+            <div class="cabecera">
+                <div class="imagenes izq">
+                    <a href="{{url_for('Hola')}}"><img src="" alt=""></a>
+                </div>
+                <div class="imagenes der">
+                    <a href="#"><img src="" alt=""></a>
+                </div>
+            </div>
+            <div class="limpiar">
+                <p class="menu">
+                    <a href="{{url_for('get_software')}}">Software</a>
+                    <a href="#">Firmware</a>
+                    <a href="#">Hardware</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Community</a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </p>
+            </div>
+        </div>
+    </header>
+    
+    <main class="centrado">
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

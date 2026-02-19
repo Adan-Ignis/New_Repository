@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de tareas</h1>
+    <form action="" method="POST">
+        <input type="text" name="descripcion" placeholder="Nueva tarea" required>
+        <button type="submit">Agreagar</button>
+    </form>
+    <ul>
+        {% for tarea in tareas %}
+        <li>
+        Tarea nº: {{t.id}} <br>
+        Descripción: {{t.descripcion}} <br>
+        Fecha alta: {{t.fecha_alta}} <br>
+        Completada: {{}}
+        {%endfor%}
+    </ul>
+</body>
+</html>

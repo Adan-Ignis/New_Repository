@@ -1,0 +1,36 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nombre": "Electrónica"
+        },
+        {
+            "id": 2,
+            "nombre": "Ropa"
+        },
+        {
+            "id": 3,
+            "nombre": "Jardín"
+        }
+    ],
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "portatil",
+            "precio": 100,
+            "id_categoria": "Electrónica"
+        },
+        {
+            "id": 2,
+            "nombre": "Camiseta",
+            "precio": 100,
+            "id_categoria": "Ropa"
+        },
+        {
+            "id": 3,
+            "nombre": "Hamaca",
+            "precio": 100,
+            "id_categoria": "Jardín"
+        }
+    ]
+}

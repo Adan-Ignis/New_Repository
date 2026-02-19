@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edición de productos</title>
+</head>
+<body>
+    <h1>Edición de productos</h1>
+    <form action="" method="get">
+        <label for="">Producto</label>
+        <select name="producto" onchange="this.form.submit()">
+            <option value="-1">--Seleccion--</option>
+            {% for p in productos %}
+            <option value="{{p.id}}">{{p.nombre}}</option>
+            {% endfor %}
+        </select>
+    </form>
+    <form action="{{url_for('actualizar_producto', producto_id = producto.id) if producto else url_for('crear_producto')}}" method="post">
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre" id="" value="{{producto.nombre}}">
+        <label for="">Precio: </label>
+        <input type="text" name="precio" id="" value="{{producto.precio}}">
+        <label for="">Categoría: </label>
+        <select name="categoria" id="">
+            {% for c in categorias %}
+            <option value="{{c.id}}"
+                {%if producto.id_categoria == c.id%} selected {% endif %}>
+                    {{c.nombre}}
+            </option>
+            {% endfor %}
+        </select>
+        <!-- Los dos botones hacen lo mismo -->
+        <button type="submit">{{'Actualizar' if producto else 'Crear'}}</button>
+        <!-- <button type="submit">{% if producto%} Actualizar {%else%}Crear{%endif%}</button> -->
+        {% if producto%}
+        <button type="submit">{{"Actualizar" if producto else "Crear"}}</button>
+        {% endif %}
+    </form>
+    <form action="{{url_for('borrar_producto', prod_id=producto.id)}}" method="post">
+        <button></button>
+    </form>
+</body>
+</html>

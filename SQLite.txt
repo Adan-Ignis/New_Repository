@@ -1,0 +1,42 @@
+CREATE TABLE coche (
+	id INTEGER PRIMARY KEY NOT NULL,
+	matricula TEXT(7),
+	id_modelo integer,
+	id_color integer
+	FOREIGN KEY (id_modelo) REFERENCES modelo(id),
+	FOREIGN KEY (id_color) REFERENCES color(id)
+);
+
+CREATE TABLE color (
+	id integer PRIMARY KEY NOT NULL,
+	nombre text(20) NOT NULL
+);
+
+CREATE TABLE modelo (
+	id integer PRIMARY KEY NOT NULL,
+	nombre text(20) NOT NULL,
+	id_marca integer
+	FOREIGN KEY (id_marca) REFERENCES marca(id)
+);
+
+CREATE TABLE marca (
+	id integer PRIMARY KEY NOT NULL,
+	nombre text(20) NOT NULL
+);
+
+CREATE TABLE persona (
+	id integer PRIMARY KEY NOT NULL,
+	dni text(9),
+	nombre text(20),
+	apellido1 text(20),
+	apellido2 text(20),
+	fechaNacimiento text(20)
+);
+
+CREATE TABLE propietario (
+	id integer PRIMARY KEY NOT NULL,
+	id_coche integer,
+	id_persona integer,
+	FOREIGN KEY (id_coche) REFERENCES coche(id)
+	FOREIGN KEY (id_persona) REFERENCES persona(id)
+)
