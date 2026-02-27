@@ -62,51 +62,45 @@ inventario = {
     "naranjas": 8
 }
 
-print("1. Mostrar inventario")
-print("2. Añadir producto")
-print("3. Actualizar cantidad")
-print("4. Eliminar producto")
-print("5. Salir")
+do {
+    # Las variables se "resetean" en cada interración del bucle para evitar problemas con sus valores gaurdados en la cache
+    clave = None
+    valor = None
 
-# 1.- Escribe un programa que:
-# 1. Pida al usuario su nombre completo.
-# 2. Muestre:
-# ○ El nombre en mayúsculas.
-# ○ El nombre en minúsculas.
-# ○ El número total de caracteres (incluyendo espacios).
-# ○ El nombre sin espacios al inicio ni al final.
+    print("1. Mostrar inventario")
+    print("2. Añadir producto")
+    print("3. Actualizar cantidad")
+    print("4. Eliminar producto")
+    print("5. Salir")
+    numero5 = int(input(Selecciona una opcion: ))
 
-# 2.- Crea una lista con 5 números introducidos por el usuario.
-# 1. Muestra:
-# ○ La lista completa.
-# ○ El número mayor.
-# ○ El número menor.
-# ○ La suma total de los números.
+    if numero5 == 1:
+        print("1. Mostrar inventario")
+        print(inventario)
 
-# 3.- Crea un programa que:
-# 1. Solicite al usuario: Nombre, Edad y Ciudad.
-# 2. Guarde los datos en un diccionario.
-# 3. Muestre un mensaje como: "Juan tiene 25 años y vive en Madrid."
+    elif numero5 == 2:
+        print("2. Añadir producto")
+        clave = input("Pon el nombre del nuevo producto: ")
+        inventario[clave] = valor
 
-# 4.- Define una función llamada area_rectangulo(base, altura) que devuelva el área.
-# 1. Pide al usuario base y altura.
-# 2. Muestra el resultado llamando a la función.
-# NOTA: Validar que los valores sean positivos.
-# 5.- Sistema Básico de Gestión de Inventario
-# Desarrollar un programa que permita gestionar un inventario utilizando:
-# ● Diccionarios
-# ● Bucles
-# ● Condicionales
+    elif numero5 == 3:
+        print("3. Actualizar cantidad")
+        clave = input("Pon el nombre del producto: ")
+        valor = int(input("Pon la cantidad: "))
+        inventario[clave] = valor
 
-# Crea un programa que gestione un inventario de una tienda.
-# El inventario debe almacenarse en un diccionario con la siguiente estructura:
-# inventario = {
-# "manzanas": 10,
-# "peras": 5,
-# "naranjas": 8 }
-# El programa debe mostrar el siguiente menú repetidamente hasta que el usuario decida salir:
-# 1. Mostrar inventario
-# 2. Añadir producto
-# 3. Actualizar cantidad
-# 4. Eliminar producto
-# 5. Salir
+    elif numero5 == 4:
+        print("4. Eliminar producto")
+        clave = input("Pon el nombre del producto que quieres quitar: ")
+
+        try:
+            del inventario[clave]
+        except KeyError:
+            print("El producto no existe")
+
+    else:
+        print("Opción invalida")
+
+} while(numero5 != 5)
+
+print("5.Salir")
