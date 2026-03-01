@@ -1,3 +1,14 @@
+# El programa no funciona en "iOS", "iPadOS"
+import os
+
+# No es una funcion porque se ejecuta una sola vez
+# Sirve para Windows
+if os.name == "nt":
+    os.system("cls")
+# Sirve para Linux y macOS
+else:
+    os.system("clear")
+
 print("Hola usuario")
 nombre1 = input("¿cual es tu nombre?: ")
 apellido1 = input("¿cual es tu 1º apellido?: ")

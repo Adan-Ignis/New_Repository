@@ -3,9 +3,6 @@
 # El programa no funciona en "iOS", "iPadOS"
 import os
 
-def area_rectangulo(base, altura):
-    return +base * +altura
-
 # No es una funcion porque se ejecuta una sola vez
 # Sirve para Windows
 if os.name == "nt":
@@ -13,6 +10,9 @@ if os.name == "nt":
 # Sirve para Linux y macOS
 else:
     os.system("clear")
+
+def area_rectangulo(base, altura):
+    return +base * +altura
 
 try:
     base = int(input("Pon la longitud de la base: "))
