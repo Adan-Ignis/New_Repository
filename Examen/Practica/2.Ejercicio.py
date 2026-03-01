@@ -13,10 +13,9 @@ lista_numero = []
 
 limpiar_terminal()
 for i in range(5):
-    numero_clave = i
     print("Lista de numeros: ")
-    for valor in lista_numero:
-        print(f"clave {numero_clave+1}: {valor}")
+    for indice, valor in lista_numero:
+        print(f"clave {indice+1}: {valor}")
 
     while True:
         try:
