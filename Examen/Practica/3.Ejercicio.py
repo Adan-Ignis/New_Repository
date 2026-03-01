@@ -9,4 +9,5 @@ persona = {
     "ciudad": ciudad
 }
 
-print(persona["nombre"].value, " tiene ", persona["edad"].value, " y vive en ", persona["ciudad"].value)
+for clave, valor in persona.items():
+    print(f"{clave}: {valor}")
