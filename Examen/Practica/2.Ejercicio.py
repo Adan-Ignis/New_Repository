@@ -13,20 +13,20 @@ lista_numero = []
 
 limpiar_terminal()
 for i in range(5):
-    print("Lista de numeros: ")
-    for indice, valor in lista_numero:
-        print(f"clave {indice+1}: {valor}")
-
+    indice_lista = i
     while True:
         try:
-            numero = int(input(f"Introduce el número {i+1}º: "))
+            numero = int(input(f"Introduce el número {indice_lista + 1}º: "))
             lista_numero.append(numero)
             break
         except ValueError:
             print("Valor invalido")
             print("Pon el valor de nuevo")
-    
+
     input('Pulsa "Enter" para continuar')
     limpiar_terminal()
 
 print("Lista de numero completa: ", lista_numero)
+print("numero mayor: ", max(lista_numero))
+print("numero menor: ", min(lista_numero))
+print("suma de todos los numeros: ", sum(lista_numero))
