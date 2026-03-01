@@ -12,5 +12,7 @@ minusculas = nombre_completo.lower()
 print(minusculas)
 
 total_caracteres = len(nombre_completo)
+print(total_caracteres)
 
 sin_espacios = nombre_completo.strip()
+print(sin_espacios)

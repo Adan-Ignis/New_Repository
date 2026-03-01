@@ -1,14 +1,10 @@
-nombre3 = None
-edad = None
-ciudad = None
-
 print("Hola usuario")
-nombre3 = input("¿cual es tu nombre?: ")
+nombre = input("¿cual es tu nombre?: ")
 edad = int(input("¿cual es tu edad?: "))
 ciudad = input("¿donde vives?: ")
 
 persona = {
-    "nombre": nombre3,
+    "nombre": nombre,
     "edad": edad,
     "ciudad": ciudad
 }
